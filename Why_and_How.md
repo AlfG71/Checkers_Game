@@ -4,7 +4,16 @@ The process is *always*:
 
     1. *Why are we doing this?* 
 
-        The purpose of this project is to build an online checkers game that people can play through a web browser. The project aims to provide a platform for users to enjoy the classic game of checkers, either against a computer opponent or another human player. Additionally, the project serves as an opportunity to learn and practice Python for the back end, JavaScript for the front end, and MySQL for the database. It also aims to improve understanding of the application development lifecycle, practice the Agile process, and create a project to showcase in a profile. Ultimately, the goal is to develop a fully functioning checkers game that can be accessed and enjoyed by users online.
+        The purpose of this project is to build an online checkers game that people 
+        can play through a web browser. The project aims to provide a platform for 
+        users to enjoy the classic game of checkers, either against a computer 
+        opponent or another human player. Additionally, the project serves as an 
+        opportunity to learn and practice Python for the back end, JavaScript for the 
+        front end, and MySQL for the database. It also aims to improve understanding 
+        of the application development lifecycle, practice the Agile process, and 
+        create a project to showcase in a profile. Ultimately, the goal is to develop 
+        a fully functioning checkers game that can be accessed and enjoyed by users 
+        online.
 
     2. *What are the specific business requirements?*
 
