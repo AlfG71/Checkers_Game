@@ -1,28 +1,67 @@
-The application will have the following components designed to communicate with each other to ensure a smooth user experience:
+System Architecture:
 
-The user interface for the Checkers app will be the user's browser
+The Checkers application will consist of the following components, each serving specific roles and collaborating to deliver a seamless user experience:
 
-1. On the front-end, JavaScript will handle the user interface which will have the following responisibilities:
+1. Front-end (JavaScript):
+   - Responsible for rendering the user interface (UI) in the user's browser.
+   - Handles user interactions, such as selecting game mode, making moves, and displaying game state.
+   - Communicates with the back-end server to exchange data and request game-related actions.
 
-    - renders the game board
-    - manages user interactions
-    - communicates with the back-end server
+2. Back-end Server (Python):
+   - Implements the core game logic, managing the rules and mechanics of the checkers game.
+   - Handles user management, including authentication, registration, and storing user profiles.
+   - Facilitates communication between the front-end and the database.
 
-2. On the back-end, a Python server will manage the following:
+3. Database (MySQL):
+   - Stores the necessary data for the application, including game data, user profiles, and other relevant information.
+   - Provides a reliable and scalable data storage solution for the application's needs.
 
-    - implements game logic
-    - manages user management
-    - communicates with the database
+Interaction Flow:
 
-3. MYSQL database will be responsible for the following:
+The application follows the following interaction flow:
 
-    - stores the game data
-    - user profiles
-    - other relevant information we might not know about yet
+1. User Interaction:
+   - Users interact with the user interface (UI) rendered by the front-end component in their web browser.
+   - They input their name, select the game mode (vs. computer or vs. another human player), and make moves on the game board.
 
-The flow of the game should be as follows:
+2. Front-end to Back-end Communication:
+   - The front-end component communicates with the back-end server using RESTful API calls over HTTP or HTTPS.
+   - The front-end sends requests to the back-end for actions such as making moves, registering new users, or retrieving game state.
+   - The front-end receives responses from the back-end, including information on the validity of moves, game progress, and other necessary data.
 
-    -The user interacts with the UI (JS Front-end) in their browser
-    -The Front-end communicates with the Back-end server using Restful API calls over HTTP or HTTPS which will send request for game moves, user authentication and other actions
-    -The Back-end server processes the requests, executes the game logic, performs database queries or updates as needed, and sends responses back to the Front-end
-    -The Back-end server interacts with the MYSQL database to store and retrieve game data, user profiles, and other relevant information.
+3. Back-end Processing:
+   - The back-end server receives requests from the front-end, processes them, and executes the necessary game logic.
+   - It validates user moves, enforces game rules, and updates the game state accordingly.
+   - The back-end also interacts with the database to store and retrieve game data, user profiles, and other relevant information.
+
+4. Database Interaction:
+   - The back-end server interacts with the MySQL database to perform database queries and updates.
+   - It stores game data, user profiles, and other relevant information in a structured and secure manner.
+   - The database ensures the persistence of data, enabling game resumption, user profile management, and other functionality.
+
+By following this architectural design, our hope is that the Checkers application can provide an engaging user experience while maintaining the necessary data integrity and communication between components.
+
+      +------------------+
+      |   User's Browser |
+      +------------------+
+               |
+               | HTTP/HTTPS
+               |
+      +-----------------+
+      |  JavaScript     |
+      |   Front-End     |
+      +-----------------+
+               |
+               | RESTful API
+               |
+      +-----------------+
+      |   Python        |
+      |  Back-End       |
+      |   Server        |
+      +-----------------+
+               |
+               | Database Queries
+               |
+      +------------------+
+      |   MySQL Database |
+      +------------------+
