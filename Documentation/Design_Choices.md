@@ -1,6 +1,8 @@
 **Design Choices and Reasoning:**
 
-    In the development process of the checkers application, several design choices were made to ensure its effectiveness, performance, and usability. The following are the key design choices and the reasoning behind them:
+    In the development process of the checkers application, several design choices 
+    were made to ensure its effectiveness, performance, and usability. The following 
+    are the key design choices and the reasoning behind them:
 
 *Technology Selection:*
 
@@ -20,4 +22,4 @@
 
 - Usability: The choice of JavaScript for the front-end allows for a responsive and interactive user interface, enhancing the overall user experience. Careful attention will be given to designing an intuitive and visually appealing user interface to ensure ease of use and engagement.
 
-    These design choices were made based on a careful evaluation of the project requirements, technical considerations, and the desire to leverage widely adopted technologies. As the development progresses, further refinements and adjustments may be made to these choices to align with emerging requirements and insights gained during the development process.
+**_NOTE:_** These design choices were made based on a careful evaluation of the project requirements, technical considerations, and the desire to leverage widely adopted technologies. As the development progresses, further refinements and adjustments may be made to these choices to align with emerging requirements and insights gained during the development process.
