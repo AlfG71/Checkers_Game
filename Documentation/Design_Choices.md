@@ -1,6 +1,8 @@
 **Design Choices and Reasoning:**
 
-    In the development process of the checkers application, several design choices\ were made to ensure its effectiveness, performance, and usability. The following\ are the key design choices and the reasoning behind them:
+    In the development process of the checkers application, several design choices 
+    were made to ensure its effectiveness, performance, and usability. The following 
+    are the key design choices and the reasoning behind them:
 
 *Technology Selection:*
 
