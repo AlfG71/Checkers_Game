@@ -636,7 +636,8 @@ Database (MySQL):
    
             player1_id: Foreign key referencing the user profile of the first player.
    
-            player2_id: Foreign key referencing the user profile of the second player (optional for computer vs. player games).
+            player2_id: Foreign key referencing the user profile of the second player 
+            (optional for computer vs. player games).
    
             start_time: Timestamp indicating when the game session started.
    
